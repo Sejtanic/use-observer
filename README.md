@@ -68,4 +68,4 @@ export default App;
   }
 }
 ```
-In this example when <div> with class name 'card-element' is 100% visible on site will also get class 'background-green' and will change color from blue to green over 1 second and start rotating.Combine classes to get amazing effects easily
+In this example when div with class name 'card-element' is 100% visible on site will also get class 'background-green' and will change color from blue to green over 1 second and start rotating.Combine classes to get amazing effects easily
