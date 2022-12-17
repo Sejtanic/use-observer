@@ -27,11 +27,11 @@ import "./App.css";
 function App() {
   // Use arguments inside useObserver function to get the desired result
   // 1st argument is element you target '.card-element' MUST USE . for class and # for id
-  // 2nd argument is booleand so you can activare observer eact time when element  is observed or only first time
+  // 2nd argument is booleand so you can activate observer each time when element  is observed or only first time
   // 3rd argument is new class that you want to add when element is observed 'new-class' DO NOT USE . in class name
   // if you dont want to add new class use Null as 3rd argument
   // 4th argument is treshold Number when element will be activated 0-1 1=100% of element visible 
-  // 5th is callback function where you can implemented your own logic that will be activated 
+  // 5th is callback function where you can implemented your own logic that will be activated when element is observed
   // you can leave out callback functon from useObserver
 
   useObserver(".card-element", true, "background-green", 1, () => {
@@ -68,4 +68,4 @@ export default App;
   }
 }
 ```
-In this example when div with class name 'card-element' is 100% visible on site will also get class 'background-green' and will change color from blue to green over 1 second and start rotating.Combine classes to get amazing effects easily
+In this example when div with class name 'card-element' is 100% visible on site will also get class 'background-green' and will change color from blue to green over 1 second start rotating and print Card element into Console.Combine classes to get amazing effects easily
