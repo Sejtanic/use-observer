@@ -1,6 +1,6 @@
 {
-  "name": "use-observer",
-  "version": "1.0.0",
+  "name": "use-observer-hs",
+  "version": "1.1.0",
   "description": "",
   "main": "use-observer.ts",
   "scripts": {
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Sejtanic/use-observer/issues"
   },
-  "homepage": "https://github.com/Sejtanic/use-observer#readme"
+  "homepage": "https://github.com/Sejtanic/use-observer#readme",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }

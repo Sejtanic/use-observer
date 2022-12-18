@@ -5,7 +5,7 @@ const useObserver = (
   eachtime: boolean,
   addClass: string | null,
   threshold: number,
-  callBack: Function = () => {}
+  callBack: (observed: IntersectionObserverEntry) => void
 ) => {
   useEffect(() => {
     const cards = document.querySelectorAll(element);
@@ -14,7 +14,7 @@ const useObserver = (
         entry.forEach((entry) => {
           if (entry.isIntersecting) {
             addClass && entry.target.classList.add(addClass);
-            callBack();
+            callBack(entry);
           } else if (eachtime) {
             addClass && entry.target.classList.remove(addClass);
           }
